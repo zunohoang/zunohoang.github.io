@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fetch('https://script.google.com/macros/s/AKfycbzHvFA3qXUpvkS4or82_7j5tZ4lILWvB-5mVHm0KsfYCln8Zaws4HNxLILIa3SlS6h3/exec/api/users', {
+            method: 'GET',
+            mode: 'no-cors'
+        })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data);
+            })
+    </script>
+</body>
+
+</html>
